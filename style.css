@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+i{
+  pointer-events: none;
+  color: white;
+}
+:root{
+  --orange  : #e9993d;
+  --red : #ec2c2c;
+  --marginDown : 1.5rem;
+} 
+
+.hide{
+  display: none;
+}
+
+.container{
+  min-height: 100vh;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 20em;
+  background: linear-gradient(135deg,var(--red),var(--orange)70%);
+  
+}
+
+.fontMed{
+  font-size: 1.1rem;
+}
+.padding{
+  padding: 0.5em;  
+}
+h1{
+  margin-bottom: var(--marginDown);
+  font-size: 3.2rem;
+  color: white;
+}
+h1 span{
+  border-bottom: 1px solid white;
+  
+}
+
+article{
+  /* border: 2px solid blue;   */
+  width: 100%;
+  display: flex;  
+  margin-bottom: var(--marginDown);
+}
+
+input{
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+input:focus{
+  border: 1px solid black;
+}
+#btn1{
+  border: 0;
+  background-color: var(--orange);
+}
+#btn1:hover,#btn2:hover,.item #editBtn:hover,.item #delBtn:hover,.item #tickBtn:hover{
+  background-color: white;
+}
+#btn1:hover i{
+  color: var(--orange);
+}
+#btn2{
+  border: 0;
+  background-color: var(--red);
+}
+
+#btn2:hover i{
+  color: var(--red);
+}
+#btn1,#btn2{
+  cursor: pointer;
+}
+
+.item{
+  /* border: 1px solid transparent; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.item div{
+  display: flex;
+}
+.item p,.item button{
+  font-size: 1.1rem;
+  padding: 0.5em;
+  border: 0;
+}
+.item p{
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+
+.item button{
+  cursor: pointer;
+}
+.item #editBtn{
+  background-color: darkviolet; 
+}
+.item #delBtn{
+  background-color: var(--red); 
+}
+.item #tickBtn{
+  background-color: rgb(41, 210, 41);
+}
+.item #editBtn:hover i{
+  color: darkviolet;
+}
+.item #delBtn:hover i{
+  color: var(--red);
+}
+.item #tickBtn:hover i{
+  color: rgb(41, 210, 41);
+}
+
+.grey{
+  background-color: rgb(234, 231, 231);
+}
+
+@media only screen and (max-width : 1200px){
+  .container {
+    padding: 1em 10em ;
+  }
+}
+
+@media only screen and (max-width : 700px){
+  .container {
+    padding: 1em 2em ;
+  }
+  h1{
+    font-size: 2rem;
+  }
+}
